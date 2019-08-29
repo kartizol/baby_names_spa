@@ -1,68 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BABY NAMES
 
-## Available Scripts
+Implement a web app (API + SPA) that displays a list of baby names that a user submits. The user experience can simply be a text input with a submit button (and a growing list of names below it) on one page. That’s it.
 
-In the project directory, you can run:
+#### Core Requirements
+* ~~Upon first visit, Users should default to working on a new distinct list.~~
+* ~~A user’s list should have an ID (alphanumeric 12-character string) that uniquely identifies
+it.~~
+* ~~Users can return to a list by visiting a URL that includes a `list_id` parameter~~
+* ~~Returning users that do not provide a list_id parameter are shown the list they most
+recently viewed.~~
+* ~~Users should be able to add as many names as they would like.~~
+* ~~Whitespace should be trimmed from both ends of the submitted names.~~
+* ~~Duplicate names (case-insensitive, per-list) should be prevented and result in
+appropriate error messaging to the user.~~
+* ~~Use PostgreSQL for your database engine~~
+* ~~SPA is fully static~~
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Stretch Goals (completely optional)
+* ~~Use React+Redux for the UI~~
+* ~~Clicking on a name crosses it out (and clicking again un-crosses it out). This crossed-out
+state should persist across sessions and between users viewing the same list.~~
+* ~~Only allow names with letters and (at most) one space.~~
+    * Good: ‘Sally Lou’, ’Stanley’, ‘JoeBob Pringles’ 
+    * Bad: ‘C3P0’, ’Stan the Man’
+* ~~Real-time updates when multiple people are working on the same list~~
+* Client-side sorting of names (Alphabetical, By Input Time, By Length)
+* Allow the user to manually prioritize the list using drag-and-drop functionality
